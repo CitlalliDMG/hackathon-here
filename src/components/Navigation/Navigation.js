@@ -26,7 +26,7 @@ const NavigationAuth = () =>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ml-auto">
           <li className="nav-item mr-3">
-            <Link to={routes.HOME} className="nav-link">Indicaciones</Link>
+            <a className="nav-link" href="https://emeraldngithub.firebaseapp.com/">Indicaciones</a>
           </li>
           <SignOutButton className="nav-item pt-3"/>
       </ul>
