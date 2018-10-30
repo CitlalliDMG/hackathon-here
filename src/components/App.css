@@ -98,3 +98,16 @@ img {
 button.nav-link {
   text-align: left;
 }
+
+.sgnOut {
+  background-color: #ffffff;
+}
+
+.sgnOut:hover {
+  background-color: #001f5e;
+  color: #ffffff;
+}
+
+/* .bus{
+  width: 150px;
+} */

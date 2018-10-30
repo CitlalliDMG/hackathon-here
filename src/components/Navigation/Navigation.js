@@ -19,16 +19,13 @@ const NavigationAuth = () =>
     <a className="navbar-brand" href={process.env.PUBLIC_URL + routes.LANDING}>
       Camioncito Seguro
     </a>
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button className="navbar-toggler mb-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
 
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ml-auto">
-        <li className="nav-item">
-          <Link to={routes.HOME} className="nav-link">Información</Link>
-        </li>
-          <SignOutButton className="nav-item"/>
+          <SignOutButton className="nav-item pt-3"/>
       </ul>
     </div>
   </nav>
@@ -38,7 +35,7 @@ const NavigationNonAuth = () =>
   <a className="navbar-brand" href={process.env.PUBLIC_URL + routes.LANDING}>
     Camioncito Seguro
   </a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button className="navbar-toggler mb-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
 
