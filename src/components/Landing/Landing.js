@@ -9,7 +9,7 @@ const LandingPage = () =>
     {/* <img src={logo} className="bus" alt="logo aplicación"/> */}
     <h1>Camioncito Seguro</h1>
     <p className="mt-5">
-      <Link to={routes.SIGN_IN} className="link">Ingresar</Link>
+      <Link to={routes.SIGN_IN} className="link">Entrar</Link>
     </p>  
   </div>
 
