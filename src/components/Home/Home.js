@@ -1,11 +1,43 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import withAuthorization from '../../session/withAuthorization';
+import Map from './Map';
+import './Home.css';
 
-const HomePage = () =>
-  <div>
-    <h1>Home Page</h1>
-  </div>
+class HomePage extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      // items: [],
+      // isLoaded: true,
+      value:'0,0',
+      error: null,
+    }
+  }
+
+  componentDidMount() {
+    if(navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          this.setState({
+            value: `${position.coords.latitude},${position.coords.longitude}`,
+            error: null,
+          });
+        },
+        (error) => this.setState(
+          {error: error.message}
+        )
+      );
+    }
+  }
+
+  render() {
+    return(
+      <Map app_id="GJI8ICf6LihEIAGbLTZb" app_code="C-Z87J-qv8YxWSZ5ctQLSg" app_coord={this.state.value} app_zoom="15"/>
+    )
+    
+  }
+}
 
 const authCondition  = (authUser) => !!authUser;
 
