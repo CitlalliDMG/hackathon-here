@@ -15,9 +15,9 @@ const Navigation = () =>
 
 
 const NavigationAuth = () => 
-  <nav className="navbar navbar-expand-lg navbar-light">
+  <nav className="navbar navbar-expand-lg navbar-light bg-green">
     <a className="navbar-brand" href={process.env.PUBLIC_URL + routes.LANDING}>
-      Hackathon HERE
+      Camioncito Seguro
     </a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -34,9 +34,9 @@ const NavigationAuth = () =>
   </nav>
 
 const NavigationNonAuth = () => 
-  <nav className="navbar navbar-expand-lg navbar-light">
+  <nav className="navbar navbar-expand-lg navbar-light bg-green">
   <a className="navbar-brand" href={process.env.PUBLIC_URL + routes.LANDING}>
-    Hackathon HERE
+    Camioncito Seguro
   </a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>

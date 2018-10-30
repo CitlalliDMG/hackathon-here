@@ -33,7 +33,9 @@ class HomePage extends Component {
 
   render() {
     return(
-      <Map app_id="GJI8ICf6LihEIAGbLTZb" app_code="C-Z87J-qv8YxWSZ5ctQLSg" app_coord={this.state.value} app_zoom="15"/>
+      <div>
+        <Map app_id="GJI8ICf6LihEIAGbLTZb" app_code="C-Z87J-qv8YxWSZ5ctQLSg" app_coord={this.state.value} app_zoom="15"/>
+      </div>
     )
     
   }
